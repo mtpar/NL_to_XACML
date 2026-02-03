@@ -1,0 +1,358 @@
+2026-02-03 11:23:01,505 - __main__ -  INFO - *** using: stage1J_codegemma:latest
+2026-02-03 11:23:01,506 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:23:01,506 - __main__ -  INFO - [NLSPEC]=The service whose endpoint is https://istiLib.it/publish can read papers in the ScientificPapers collection, provided that paper embargo expires on or before 31/12/2025.
+2026-02-03 11:23:48,153 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:23:48,153 - __main__ -  INFO - ```json
+{
+  "Effect": "allow",
+  "Subjects": [{
+    "name": "service",
+    "properties": ["endpoint is https://istiLib.it/publish"]
+  }],
+  "Actions": [{
+    "name": "read",
+    "properties": ["papers in the ScientificPapers collection"]
+  }],
+  "Resources": [{
+    "name": "papers",
+    "properties": ["embargo expires on or before 31/12/2025"]
+  }]
+}
+```
+2026-02-03 11:23:48,153 - __main__ -  INFO - ****** Execution time: 46.11755510000512 seconds *****
+2026-02-03 11:23:48,159 - __main__ -  INFO - *** using: stage1J_codegemma:latest
+2026-02-03 11:23:48,159 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:23:48,159 - __main__ -  INFO - [NLSPEC]=The https://istiLib.it/publish service is allowed to read papers in the ScientificPapers collection, but this service may operate only on papers whose embargo date is <= 31/12/2025.
+2026-02-03 11:24:09,443 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:24:09,444 - __main__ -  INFO - ```json
+{
+  "Effect": "allow",
+  "Subjects": [{
+    "name": "service",
+    "properties": ["is the https://istiLib.it/publish service"]
+  }],
+  "Actions": [{
+    "name": "read",
+    "properties": ["on papers in the ScientificPapers collection"]
+  }],
+  "Resources": [{
+    "name": "papers",
+    "properties": ["whose embargo date is <= 31/12/2025"]
+  }]
+}
+```
+2026-02-03 11:24:09,446 - __main__ -  INFO - ****** Execution time: 20.791399999987334 seconds *****
+2026-02-03 11:24:09,451 - __main__ -  INFO - *** using: stage1J_codegemma:latest
+2026-02-03 11:24:09,452 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:24:09,453 - __main__ -  INFO - [NLSPEC]=All the papers in the ScientificPapers collection and those stored in the https://ISTI-CNR/PhdThesis repository  can be accessed by researchers and ISTI-associated users whose association expires after 21/12/2026
+2026-02-03 11:24:39,115 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:24:39,115 - __main__ -  INFO - ```json
+{
+  "Effect": "allow",
+  "Subjects": [
+    {
+      "name": "researchers",
+      "properties": ["associated with ISTI"]
+    },
+    {
+      "name": "ISTI-associated users",
+      "properties": ["association expires after 21/12/2026"]
+    }
+  ],
+  "Actions": [
+    {
+      "name": "access",
+      "properties": []
+    }
+  ],
+  "Resources": [
+    {
+      "name": "ScientificPapers",
+      "properties": []
+    },
+    {
+      "name": "https://ISTI-CNR/PhdThesis",
+      "properties": []
+    }
+  ]
+}
+```
+2026-02-03 11:24:39,131 - __main__ -  INFO - ****** Execution time: 29.1531352000311 seconds *****
+2026-02-03 11:24:39,137 - __main__ -  INFO - *** using: stage1J_codegemma:latest
+2026-02-03 11:24:39,137 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:24:39,137 - __main__ -  INFO - [NLSPEC]=All the papers in the ScientificPapers collection and in the https://ISTI-CNR/PhdThesis repository can be accessed by users whose role is researcher or whose role is ISTI-associated. The latter must have association expires after 21/12/2026
+2026-02-03 11:25:01,729 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:25:01,742 - __main__ -  INFO - ```json
+{
+  "Effect": "allow",
+  "Subjects": [
+    {
+      "name": "user",
+      "properties": [
+        "role is researcher",
+        "role is ISTI-associated"
+      ]
+    }
+  ],
+  "Actions": [],
+  "Resources": [
+    {
+      "name": "ScientificPapers",
+      "properties": []
+    },
+    {
+      "name": "https://ISTI-CNR/PhdThesis",
+      "properties": []
+    }
+  ]
+}
+```
+2026-02-03 11:25:01,742 - __main__ -  INFO - ****** Execution time: 22.101845300057903 seconds *****
+2026-02-03 11:25:01,743 - __main__ -  INFO - *** using: stage1J_codellama:latest
+2026-02-03 11:25:01,743 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:25:01,743 - __main__ -  INFO - [NLSPEC]=The service whose endpoint is https://istiLib.it/publish can read papers in the ScientificPapers collection, provided that paper embargo expires on or before 31/12/2025.
+2026-02-03 11:25:36,677 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:25:36,677 - __main__ -  INFO - {
+"Effect": "allow"
+"Subjects": [{Subject.name : "service", Subject.properties: ["endpoint is https://istiLib.it/publish"]}]
+"Actions": [{Action.name : "read", Action.properties: ["provided that paper embargo expires on or before 31/12/2025"]}]
+"Resources": [{Resource.name : "papers", Resource.properties: ["belong to the ScientificPapers collection"]}]
+}
+2026-02-03 11:25:36,679 - __main__ -  INFO - ****** Execution time: 34.458554700016975 seconds *****
+2026-02-03 11:25:36,684 - __main__ -  INFO - *** using: stage1J_codellama:latest
+2026-02-03 11:25:36,684 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:25:36,684 - __main__ -  INFO - [NLSPEC]=The https://istiLib.it/publish service is allowed to read papers in the ScientificPapers collection, but this service may operate only on papers whose embargo date is <= 31/12/2025.
+2026-02-03 11:25:50,609 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:25:50,610 - __main__ -  INFO - {
+"Effect": "allow"
+"Subjects": [{Subject.name : "https://istiLib.it/publish", Subject.properties: []}]
+"Actions": [{Action.name : "read", Action.properties: ["<= 31/12/2025"]}]
+"Resources": [{Resource.name : "papers", Resource.properties: ["belong to the ScientificPapers collection"]}]
+}
+2026-02-03 11:25:50,612 - __main__ -  INFO - ****** Execution time: 13.422296199947596 seconds *****
+2026-02-03 11:25:50,617 - __main__ -  INFO - *** using: stage1J_codellama:latest
+2026-02-03 11:25:50,618 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:25:50,619 - __main__ -  INFO - [NLSPEC]=All the papers in the ScientificPapers collection and those stored in the https://ISTI-CNR/PhdThesis repository  can be accessed by researchers and ISTI-associated users whose association expires after 21/12/2026
+2026-02-03 11:26:07,638 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:26:07,638 - __main__ -  INFO - {
+"Effect": "allow"
+"Subjects": [{Subject.name : "researcher", Subject.properties: ["ISTI-associated user"]}]
+"Actions": [{Action.name : "access", Action.properties: ["expires after 21/12/2026"]}]
+"Resources": [{Resource.name : "papers", Resource.properties: ["belong to the ScientificPapers collection", "stored in the https://ISTI-CNR/PhdThesis repository"]}]
+}
+2026-02-03 11:26:07,641 - __main__ -  INFO - ****** Execution time: 16.5163968000561 seconds *****
+2026-02-03 11:26:07,645 - __main__ -  INFO - *** using: stage1J_codellama:latest
+2026-02-03 11:26:07,645 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:26:07,645 - __main__ -  INFO - [NLSPEC]=All the papers in the ScientificPapers collection and in the https://ISTI-CNR/PhdThesis repository can be accessed by users whose role is researcher or whose role is ISTI-associated. The latter must have association expires after 21/12/2026
+2026-02-03 11:26:23,538 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:26:23,540 - __main__ -  INFO - {
+"Effect": "allow"
+"Subjects": [{Subject.name : "user", Subject.properties: ["role is researcher", "role is ISTI-associated"]}]
+"Actions": [{Action.name : "access", Action.properties: []}]
+"Resources": [{Resource.name : "papers", Resource.properties: ["belong to the ScientificPapers collection", "belong to the https://ISTI-CNR/PhdThesis repository"]}]
+}
+2026-02-03 11:26:23,540 - __main__ -  INFO - ****** Execution time: 15.384921600110829 seconds *****
+2026-02-03 11:26:23,545 - __main__ -  INFO - *** using: stage1J_deepseek:latest
+2026-02-03 11:26:23,545 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:26:23,545 - __main__ -  INFO - [NLSPEC]=The service whose endpoint is https://istiLib.it/publish can read papers in the ScientificPapers collection, provided that paper embargo expires on or before 31/12/2025.
+2026-02-03 11:27:03,719 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:27:03,719 - __main__ -  INFO - {
+"Effect": "allow",
+"Subjects": [{"Subject.name": "service", "Subject.properties": ["https://istiLib.it/publish"]}],
+"Actions": [{"Action.name": "read", "Action.properties": []}],
+"Resources": [{"Resource.name": "papers", "Resource.properties": ["in the ScientificPapers collection", "embargo expires on or before 31/12/2025"]}]
+}
+
+2026-02-03 11:27:03,719 - __main__ -  INFO - ****** Execution time: 39.66638499987312 seconds *****
+2026-02-03 11:27:03,729 - __main__ -  INFO - *** using: stage1J_deepseek:latest
+2026-02-03 11:27:03,729 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:27:03,729 - __main__ -  INFO - [NLSPEC]=The https://istiLib.it/publish service is allowed to read papers in the ScientificPapers collection, but this service may operate only on papers whose embargo date is <= 31/12/2025.
+2026-02-03 11:27:18,936 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:27:18,938 - __main__ -  INFO - {
+"Effect": "allow",
+"Subjects": [{"Subject.name": "https://istiLib.it/publish", "Subject.properties": []}],
+"Actions": [{"Action.name": "read", "Action.properties": ["from the ScientificPapers collection"]}],
+"Resources": [{"Resource.name": "papers", "Resource.properties": ["embargo date <= 31/12/2025"]}]
+}
+
+2026-02-03 11:27:18,938 - __main__ -  INFO - ****** Execution time: 14.726943499874324 seconds *****
+2026-02-03 11:27:18,940 - __main__ -  INFO - *** using: stage1J_deepseek:latest
+2026-02-03 11:27:18,940 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:27:18,940 - __main__ -  INFO - [NLSPEC]=All the papers in the ScientificPapers collection and those stored in the https://ISTI-CNR/PhdThesis repository  can be accessed by researchers and ISTI-associated users whose association expires after 21/12/2026
+2026-02-03 11:27:37,890 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:27:37,890 - __main__ -  INFO - {
+"Effect": "allow",
+"Subjects": [{"Subject.name": "researchers", "Subject.properties": ["ISTI-associated"]}],
+"Actions": [{"Action.name": "access", "Action.properties": []}],
+"Resources": [{"Resource.name": "papers", "Resource.properties": ["in the ScientificPapers collection", "stored in https://ISTI-CNR/PhdThesis repository"]}, {"Resource.name": "association", "Resource.properties": ["expires after 21/12/2026"]}]
+}
+
+2026-02-03 11:27:37,890 - __main__ -  INFO - ****** Execution time: 18.441279999911785 seconds *****
+2026-02-03 11:27:37,896 - __main__ -  INFO - *** using: stage1J_deepseek:latest
+2026-02-03 11:27:37,896 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:27:37,896 - __main__ -  INFO - [NLSPEC]=All the papers in the ScientificPapers collection and in the https://ISTI-CNR/PhdThesis repository can be accessed by users whose role is researcher or whose role is ISTI-associated. The latter must have association expires after 21/12/2026
+2026-02-03 11:27:57,669 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:27:57,669 - __main__ -  INFO - {
+"Effect": "allow",
+"Subjects": [{"Subject.name": "user", "Subject.properties": ["role is researcher", "role is ISTI-associated"]}],
+"Actions": [{"Action.name": "access", "Action.properties": []}],
+"Resources": [{"Resource.name": "papers", "Resource.properties": ["belong to the ScientificPapers collection", "be in https://ISTI-CNR/PhdThesis repository"]}, {"Resource.name": "association", "Resource.properties": ["expires after 21/12/2026"]}]
+}
+
+2026-02-03 11:27:57,669 - __main__ -  INFO - ****** Execution time: 19.186406600056216 seconds *****
+2026-02-03 11:27:57,679 - __main__ -  INFO - *** using: stage1J_qwen:latest
+2026-02-03 11:27:57,679 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:27:57,679 - __main__ -  INFO - [NLSPEC]=The service whose endpoint is https://istiLib.it/publish can read papers in the ScientificPapers collection, provided that paper embargo expires on or before 31/12/2025.
+2026-02-03 11:28:41,562 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:28:41,574 - __main__ -  INFO - ```json
+{
+  "Effect": "allow",
+  "Subjects": [
+    {
+      "Subject.name": "service",
+      "Subject.properties": ["endpoint is https://istiLib.it/publish"]
+    }
+  ],
+  "Actions": [
+    {
+      "Action.name": "read",
+      "Action.properties": []
+    }
+  ],
+  "Resources": [
+    {
+      "Resource.name": "papers",
+      "Resource.properties": ["belong to the ScientificPapers collection", "embargo expires on or before 31/12/2025"]
+    }
+  ]
+}
+```
+2026-02-03 11:28:41,574 - __main__ -  INFO - ****** Execution time: 43.03111510002054 seconds *****
+2026-02-03 11:28:41,576 - __main__ -  INFO - *** using: stage1J_qwen:latest
+2026-02-03 11:28:41,576 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:28:41,577 - __main__ -  INFO - [NLSPEC]=The https://istiLib.it/publish service is allowed to read papers in the ScientificPapers collection, but this service may operate only on papers whose embargo date is <= 31/12/2025.
+2026-02-03 11:28:54,672 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:28:54,672 - __main__ -  INFO - {
+"Effect": "allow",
+"Subjects": [{Subject.name: "https://istiLib.it/publish", Subject.properties: []}],
+"Actions": [{Action.name: "read", Action.properties: []}],
+"Resources": [{Resource.name: "papers", Resource.properties: ["belong to the ScientificPapers collection", "embargo date is <= 31/12/2025"]}]
+}
+2026-02-03 11:28:54,672 - __main__ -  INFO - ****** Execution time: 12.355926899937913 seconds *****
+2026-02-03 11:28:54,681 - __main__ -  INFO - *** using: stage1J_qwen:latest
+2026-02-03 11:28:54,683 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:28:54,683 - __main__ -  INFO - [NLSPEC]=All the papers in the ScientificPapers collection and those stored in the https://ISTI-CNR/PhdThesis repository  can be accessed by researchers and ISTI-associated users whose association expires after 21/12/2026
+2026-02-03 11:29:14,660 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:29:14,661 - __main__ -  INFO - ```json
+{
+"Effect": "allow",
+"Subjects": [
+    { "Subject.name": "researcher", "Subject.properties": [] },
+    { "Subject.name": "ISTI-associated user", "Subject.properties": ["association expires after 21/12/2026"] }
+],
+"Actions": [{ "Action.name": "access", "Action.properties": [] }],
+"Resources": [
+    { "Resource.name": "papers", "Resource.properties": ["belong to the ScientificPapers collection"] },
+    { "Resource.name": "papers", "Resource.properties": ["stored in the https://ISTI-CNR/PhdThesis repository"] }
+]
+}
+```
+2026-02-03 11:29:14,661 - __main__ -  INFO - ****** Execution time: 19.212136499816552 seconds *****
+2026-02-03 11:29:14,661 - __main__ -  INFO - *** using: stage1J_qwen:latest
+2026-02-03 11:29:14,663 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:29:14,663 - __main__ -  INFO - [NLSPEC]=All the papers in the ScientificPapers collection and in the https://ISTI-CNR/PhdThesis repository can be accessed by users whose role is researcher or whose role is ISTI-associated. The latter must have association expires after 21/12/2026
+2026-02-03 11:29:32,726 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:29:32,738 - __main__ -  INFO - ```json
+{
+"Effect": "allow",
+"Subjects": [
+    {
+        "Subject.name": "user",
+        "Subject.properties": ["role is researcher", "role is ISTI-associated"]
+    }
+],
+"Resources": [
+    {
+        "Resource.name": "papers",
+        "Resource.properties": ["belong to the ScientificPapers collection", "belong to the https://ISTI-CNR/PhdThesis repository"]
+    }
+],
+"ActionProperties": [
+    {
+        "Action.property": "association expires after 21/12/2026"
+    }
+]
+}
+```
+2026-02-03 11:29:32,738 - __main__ -  INFO - ****** Execution time: 17.342204299988225 seconds *****
+2026-02-03 11:29:32,740 - __main__ -  INFO - *** using: stage1J_mistral:latest
+2026-02-03 11:29:32,741 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:29:32,741 - __main__ -  INFO - [NLSPEC]=The service whose endpoint is https://istiLib.it/publish can read papers in the ScientificPapers collection, provided that paper embargo expires on or before 31/12/2025.
+2026-02-03 11:30:12,761 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:30:12,762 - __main__ -  INFO -  {
+"Effect": "allow",
+"Subjects": [{ "name": "service", "properties": ["endpoint is https://istiLib.it/publish"] }],
+"Actions": [{ "name": "read", "properties": ["on or before 31/12/2025"] }],
+"Resources": [{ "name": "papers", "properties": ["belong to the ScientificPapers collection"] }]
+}
+2026-02-03 11:30:12,762 - __main__ -  INFO - ****** Execution time: 39.27765950001776 seconds *****
+2026-02-03 11:30:12,763 - __main__ -  INFO - *** using: stage1J_mistral:latest
+2026-02-03 11:30:12,763 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:30:12,763 - __main__ -  INFO - [NLSPEC]=The https://istiLib.it/publish service is allowed to read papers in the ScientificPapers collection, but this service may operate only on papers whose embargo date is <= 31/12/2025.
+2026-02-03 11:30:28,163 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:30:28,163 - __main__ -  INFO -  {
+"Effect": "allow",
+"Subjects": [{ "name": "https://istiLib.it/publish", "properties": [] }],
+"Actions": [{ "name": "read", "properties": [""] }],
+"Resources": [{ "name": "papers", "properties": ["belong to the ScientificPapers collection"] }],
+"ResourceProperties": [{ "name": "embargo date", "value": "<= 31/12/2025" }]
+}
+2026-02-03 11:30:28,163 - __main__ -  INFO - ****** Execution time: 14.681247300002724 seconds *****
+2026-02-03 11:30:28,165 - __main__ -  INFO - *** using: stage1J_mistral:latest
+2026-02-03 11:30:28,165 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:30:28,165 - __main__ -  INFO - [NLSPEC]=All the papers in the ScientificPapers collection and those stored in the https://ISTI-CNR/PhdThesis repository  can be accessed by researchers and ISTI-associated users whose association expires after 21/12/2026
+2026-02-03 11:30:50,740 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:30:50,740 - __main__ -  INFO -  {
+"Effect": "allow",
+"Subjects": [{
+"Subject.name": "researcher",
+"Subject.properties": []
+},
+{
+"Subject.name": "ISTI-associated user",
+"Subject.properties": [
+"association expires after 21/12/2026"
+]
+}],
+"Actions": [{
+"Action.name": "access"
+}],
+"Resources": [{
+"Resource.name": "papers",
+"Resource.properties": ["belong to the ScientificPapers collection"]
+},
+{
+"Resource.name": "PhdThesis",
+"Resource.properties": ["stored in the https://ISTI-CNR/PhdThesis repository"]
+}]
+}
+2026-02-03 11:30:50,740 - __main__ -  INFO - ****** Execution time: 22.00232550012879 seconds *****
+2026-02-03 11:30:50,740 - __main__ -  INFO - *** using: stage1J_mistral:latest
+2026-02-03 11:30:50,740 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-03 11:30:50,740 - __main__ -  INFO - [NLSPEC]=All the papers in the ScientificPapers collection and in the https://ISTI-CNR/PhdThesis repository can be accessed by users whose role is researcher or whose role is ISTI-associated. The latter must have association expires after 21/12/2026
+2026-02-03 11:31:09,180 - __main__ -  INFO - ------->Structure extracted:
+2026-02-03 11:31:09,180 - __main__ -  INFO -  {
+"Effect": "allow",
+"Subjects": [{
+"Subject.name": "user",
+"Subject.properties": ["role is researcher", "role is ISTI-associated", "association expires after 21/12/2026"]
+}],
+"Actions": [{
+"Action.name": "access"
+}],
+"Resources": [{
+"Resource.name": "papers",
+"Resource.properties": ["belong to the ScientificPapers collection", "belong to the https://ISTI-CNR/PhdThesis repository"]
+}]
+}
+2026-02-03 11:31:09,180 - __main__ -  INFO - ****** Execution time: 17.939204700058326 seconds *****

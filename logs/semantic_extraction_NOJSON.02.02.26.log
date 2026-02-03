@@ -1,0 +1,388 @@
+2026-02-02 11:47:58,620 - __main__ -  INFO - *** using: stage1_codegemma:latest
+2026-02-02 11:47:58,620 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:47:58,620 - __main__ -  INFO - [NLSPEC]=Everyone can read or write documents stored in the https://ISTI-CNR/Public repository
+2026-02-02 11:48:28,580 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:48:28,583 - __main__ -  INFO - EFFECT: allow
+SUBJECTS: [{Subject.name : "everyone"}]
+ACTIONS: [{Action.name : "read"}, {Action.name : "write"}]
+RESOURCES: [{Resource.name : "documents", Resource.properties: ["stored in the https://ISTI-CNR/Public repository"]}]
+2026-02-02 11:48:28,583 - __main__ -  INFO - ****** Execution time: 29.471904499921948 seconds *****
+2026-02-02 11:48:28,592 - __main__ -  INFO - *** using: stage1_codegemma:latest
+2026-02-02 11:48:28,592 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:48:28,592 - __main__ -  INFO - [NLSPEC]=All subjects are permitted to perform the actions read and write on any resource whose repository location is https://ISTI-CNR/Public.
+2026-02-02 11:48:41,374 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:48:41,374 - __main__ -  INFO - EFFECT: allow
+SUBJECTS: [{Subject.name : "all subjects"}]
+ACTIONS: [{Action.name : "read"}, {Action.name : "write"}]
+RESOURCES: [{Resource.name : "any resource", Resource.properties: ["repository location is https://ISTI-CNR/Public"]}]
+2026-02-02 11:48:41,374 - __main__ -  INFO - ****** Execution time: 12.115145600168034 seconds *****
+2026-02-02 11:48:41,376 - __main__ -  INFO - *** using: stage1_codegemma:latest
+2026-02-02 11:48:41,376 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:48:41,376 - __main__ -  INFO - [NLSPEC]=Scientific papers which belong to the CNR-ISTI collection can be downloaded only by professors
+2026-02-02 11:48:53,137 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:48:53,137 - __main__ -  INFO - EFFECT: allow
+SUBJECTS: [{Subject.name : "professor", Subject.properties: []}]
+ACTIONS: [{Action.name : "download", Action.properties: []}]
+RESOURCES: [{Resource.name : "scientific papers", Resource.properties: ["belong to the CNR-ISTI collection"]}]
+2026-02-02 11:48:53,137 - __main__ -  INFO - ****** Execution time: 11.241630899952725 seconds *****
+2026-02-02 11:48:53,142 - __main__ -  INFO - *** using: stage1_codegemma:latest
+2026-02-02 11:48:53,142 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:49:06,472 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:49:06,474 - __main__ -  INFO - EFFECT: allow
+SUBJECTS: [{Subject.name : "subject", Subject.properties: ["has the role of professor"]}]
+ACTIONS: [{Action.name : "download", Action.properties: []}]
+RESOURCES: [{Resource.name : "scientific paper", Resource.properties: ["part of the CNR-ISTI collection"]}]
+2026-02-02 11:49:06,476 - __main__ -  INFO - ****** Execution time: 12.435858400072902 seconds *****
+2026-02-02 11:49:06,476 - __main__ -  INFO - *** using: stage1_codegemma:latest
+2026-02-02 11:49:06,482 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:49:06,482 - __main__ -  INFO - [NLSPEC]=Scientific papers which belong to the CNR-ISTI collection can be accessed only by professors of the Computer-Science Faculty, on Mondays, from 10 AM to 2 PM
+2026-02-02 11:49:22,454 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:49:22,454 - __main__ -  INFO - EFFECT: allow
+SUBJECTS: [{Subject.name : "professor", Subject.properties: ["of the Computer-Science Faculty"]}]
+ACTIONS: [{Action.name : "access", Action.properties: ["on Mondays", "from 10 AM to 2 PM"]}]
+RESOURCES: [{Resource.name : "scientific papers", Resource.properties: ["belong to the CNR-ISTI collection"]}]
+2026-02-02 11:49:22,454 - __main__ -  INFO - ****** Execution time: 15.274339699884877 seconds *****
+2026-02-02 11:49:22,454 - __main__ -  INFO - *** using: stage1_codegemma:latest
+2026-02-02 11:49:22,454 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:49:39,097 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:49:39,097 - __main__ -  INFO - EFFECT: allow
+SUBJECTS: [{Subject.name : "professor", Subject.properties: ["from the Computer Science Faculty"]}]
+ACTIONS: [{Action.name : "access", Action.properties: ["on Mondays", "from 10:00 AM to 2:00 PM"]}]
+RESOURCES: [{Resource.name : "scientific papers", Resource.properties: ["in the CNR-ISTI collection"]}]
+2026-02-02 11:49:39,098 - __main__ -  INFO - ****** Execution time: 15.905286400113255 seconds *****
+2026-02-02 11:49:39,100 - __main__ -  INFO - *** using: stage1_codegemma:latest
+2026-02-02 11:49:39,100 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:49:39,100 - __main__ -  INFO - [NLSPEC]=Students logged as Phd can access the https://ISTI-CNR/PhDStudents services  from the 192.168.1.0/24 or the 10.0.0.0/16 authorized subnets.
+2026-02-02 11:49:56,800 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:49:56,802 - __main__ -  INFO - EFFECT: allow
+SUBJECTS: [{Subject.name : "user", Subject.properties: ["logged as Phd"]}]
+ACTIONS: []
+RESOURCES: [{Resource.name : "https://ISTI-CNR/PhDStudents", Resource.properties: ["authorized subnets", "192.168.1.0/24", "10.0.0.0/16"]}]
+2026-02-02 11:49:56,802 - __main__ -  INFO - ****** Execution time: 17.013836900005117 seconds *****
+2026-02-02 11:49:56,807 - __main__ -  INFO - *** using: stage1_codegemma:latest
+2026-02-02 11:49:56,807 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:49:56,812 - __main__ -  INFO - [NLSPEC]=Students who are logged in as PhD students can access the services at https://ISTI-CNR/PhDStudents only if they connect from one of the authorized subnets: 192.168.1.0/24 or 10.0.0.0/16.
+2026-02-02 11:50:12,647 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:50:12,647 - __main__ -  INFO - EFFECT: allow
+SUBJECTS: [{Subject.name : "user", Subject.properties: ["is logged in as PhD student"]}]
+ACTIONS: [{Action.name : "access", Action.properties: []}]
+RESOURCES: [{Resource.name : "services", Resource.properties: ["at https://ISTI-CNR/PhDStudents"]}]
+2026-02-02 11:50:12,647 - __main__ -  INFO - ****** Execution time: 15.124477099860087 seconds *****
+2026-02-02 11:50:12,647 - __main__ -  INFO - *** using: stage1_codellama:latest
+2026-02-02 11:50:12,647 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:50:12,647 - __main__ -  INFO - [NLSPEC]=Everyone can read or write documents stored in the https://ISTI-CNR/Public repository
+2026-02-02 11:50:43,284 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:50:43,284 - __main__ -  INFO - 
+EFFECT: allow
+SUBJECTS: [{Subject.name : "everyone"}]
+ACTIONS: [{Action.name : "read", Action.properties: []}, {Action.name : "write", Action.properties: []}]
+RESOURCES: [{Resource.name : "documents stored in the https://ISTI-CNR/Public repository", Resource.properties: []}]
+2026-02-02 11:50:43,284 - __main__ -  INFO - ****** Execution time: 29.936954400036484 seconds *****
+2026-02-02 11:50:43,284 - __main__ -  INFO - *** using: stage1_codellama:latest
+2026-02-02 11:50:43,284 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:50:43,290 - __main__ -  INFO - [NLSPEC]=All subjects are permitted to perform the actions read and write on any resource whose repository location is https://ISTI-CNR/Public.
+2026-02-02 11:50:54,585 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:50:54,585 - __main__ -  INFO - 
+EFFECT: allow
+SUBJECTS: [{Subject.name : "subject"}]
+ACTIONS: [{Action.name : "read", Action.properties: []}, {Action.name : "write", Action.properties: []}]
+RESOURCES: [{Resource.name : "resource", Resource.properties: ["repository location is https://ISTI-CNR/Public"]}]
+2026-02-02 11:50:54,585 - __main__ -  INFO - ****** Execution time: 10.601671100128442 seconds *****
+2026-02-02 11:50:54,592 - __main__ -  INFO - *** using: stage1_codellama:latest
+2026-02-02 11:50:54,596 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:50:54,596 - __main__ -  INFO - [NLSPEC]=Scientific papers which belong to the CNR-ISTI collection can be downloaded only by professors
+2026-02-02 11:51:03,951 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:51:03,951 - __main__ -  INFO - 
+EFFECT: allow
+SUBJECTS: [{Subject.name : "professor"}]
+ACTIONS: [{Action.name : "download", Action.properties: ["from the CNR-ISTI collection"]}]
+RESOURCES: [{Resource.name : "scientific papers", Resource.properties: []}]
+2026-02-02 11:51:03,951 - __main__ -  INFO - ****** Execution time: 8.669451300054789 seconds *****
+2026-02-02 11:51:03,962 - __main__ -  INFO - *** using: stage1_codellama:latest
+2026-02-02 11:51:03,962 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:51:15,136 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:51:15,136 - __main__ -  INFO - 
+EFFECT: allow
+SUBJECTS: [{Subject.name : "subject", Subject.properties: ["role is professor"]}]
+ACTIONS: [{Action.name : "download", Action.properties: ["part of the CNR-ISTI collection"]}]
+RESOURCES: [{Resource.name : "scientific paper", Resource.properties: []}]
+2026-02-02 11:51:15,136 - __main__ -  INFO - ****** Execution time: 10.493488800013438 seconds *****
+2026-02-02 11:51:15,142 - __main__ -  INFO - *** using: stage1_codellama:latest
+2026-02-02 11:51:15,146 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:51:15,146 - __main__ -  INFO - [NLSPEC]=Scientific papers which belong to the CNR-ISTI collection can be accessed only by professors of the Computer-Science Faculty, on Mondays, from 10 AM to 2 PM
+2026-02-02 11:51:29,420 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:51:29,422 - __main__ -  INFO - 
+EFFECT: allow
+SUBJECTS: [{Subject.name : "professor", Subject.properties: ["belongs to the Computer-Science Faculty"]}]
+ACTIONS: [{Action.name : "access", Action.properties: ["on Mondays", "from 10 AM to 2 PM"]}]
+RESOURCES: [{Resource.name : "scientific papers", Resource.properties: ["belong to the CNR-ISTI collection"]}]
+2026-02-02 11:51:29,422 - __main__ -  INFO - ****** Execution time: 13.565393900033087 seconds *****
+2026-02-02 11:51:29,429 - __main__ -  INFO - *** using: stage1_codellama:latest
+2026-02-02 11:51:29,429 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:51:43,942 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:51:43,947 - __main__ -  INFO - 
+EFFECT: allow
+SUBJECTS: [{Subject.name : "professor", Subject.properties: ["belongs to the Computer Science Faculty"]}]
+ACTIONS: [{Action.name : "access", Action.properties: ["on Mondays between 10:00 AM and 2:00 PM"]}]
+RESOURCES: [{Resource.name : "scientific papers", Resource.properties: ["belong to the CNR-ISTI collection"]}]
+2026-02-02 11:51:43,947 - __main__ -  INFO - ****** Execution time: 13.81690079998225 seconds *****
+2026-02-02 11:51:43,952 - __main__ -  INFO - *** using: stage1_codellama:latest
+2026-02-02 11:51:43,952 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:51:43,952 - __main__ -  INFO - [NLSPEC]=Students logged as Phd can access the https://ISTI-CNR/PhDStudents services  from the 192.168.1.0/24 or the 10.0.0.0/16 authorized subnets.
+2026-02-02 11:52:00,749 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:52:00,749 - __main__ -  INFO - 
+EFFECT: allow
+SUBJECTS: [{Subject.name : "user", Subject.properties: ["belongs to the PhD group"]}]
+ACTIONS: [{Action.name : "access", Action.properties: ["from the 192.168.1.0/24 or the 10.0.0.0/16 authorized subnets"]}]
+RESOURCES: [{Resource.name : "https://ISTI-CNR/PhDStudents", Resource.properties: []}]
+2026-02-02 11:52:00,749 - __main__ -  INFO - ****** Execution time: 16.09921979997307 seconds *****
+2026-02-02 11:52:00,751 - __main__ -  INFO - *** using: stage1_codellama:latest
+2026-02-02 11:52:00,751 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:52:00,751 - __main__ -  INFO - [NLSPEC]=Students who are logged in as PhD students can access the services at https://ISTI-CNR/PhDStudents only if they connect from one of the authorized subnets: 192.168.1.0/24 or 10.0.0.0/16.
+2026-02-02 11:52:17,861 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 11:52:17,861 - __main__ -  INFO - 
+EFFECT: allow
+SUBJECTS: [{Subject.name : "user", Subject.properties: ["belongs to the PhD group"]}]
+ACTIONS: [{Action.name : "access", Action.properties: ["at https://ISTI-CNR/PhDStudents"]}]
+RESOURCES: [{Resource.name : "services", Resource.properties: ["authorized subnets: 192.168.1.0/24 or 10.0.0.0/16"]}]
+2026-02-02 11:52:17,861 - __main__ -  INFO - ****** Execution time: 16.43834080011584 seconds *****
+2026-02-02 11:52:17,871 - __main__ -  INFO - *** using: stage1_deepseek:latest
+2026-02-02 11:52:17,872 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 11:52:17,872 - __main__ -  INFO - [NLSPEC]=Everyone can read or write documents stored in the https://ISTI-CNR/Public repository
+2026-02-02 12:31:16,674 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:31:16,756 - __main__ -  INFO - ****** Execution time: 2338.161174699897 seconds *****
+2026-02-02 12:31:16,756 - __main__ -  INFO - *** using: stage1_deepseek:latest
+2026-02-02 12:31:16,756 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:31:16,756 - __main__ -  INFO - [NLSPEC]=All subjects are permitted to perform the actions read and write on any resource whose repository location is https://ISTI-CNR/Public.
+2026-02-02 12:31:55,769 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:31:55,769 - __main__ -  INFO - EFFECT: allow
+SUBJECTS: [{Subject.name  : "all", Subject.properties: []}]
+ACTIONS: [{Action.name  : "read", Action.properties: []}, {Action.name  : "write", Action.properties: []}]
+RESOURCES: [{Resource.name  : "any", Resource.properties: ["repository location is https://ISTI-CNR/Public"]}]
+
+This NLSPEC states that all subjects are allowed to perform the actions read and write on any resource whose repository location is https://ISTI-CNR/Public.
+
+2026-02-02 12:31:55,769 - __main__ -  INFO - ****** Execution time: 38.2800481999293 seconds *****
+2026-02-02 12:31:55,769 - __main__ -  INFO - *** using: stage1_deepseek:latest
+2026-02-02 12:31:55,769 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:31:55,769 - __main__ -  INFO - [NLSPEC]=Scientific papers which belong to the CNR-ISTI collection can be downloaded only by professors
+2026-02-02 12:32:13,401 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:32:13,401 - __main__ -  INFO - EFFECT: allow
+SUBJECTS: [{Subject.name  : "professor", Subject.properties: []}]
+ACTIONS: [{Action.name  : "download", Action.properties: []}]
+RESOURCES: [{Resource.name  : "Scientific papers", Resource.properties: ["belong to the CNR-ISTI collection"]}]
+
+This is a simple access control rule where only professors are allowed to download scientific papers from the CNR-ISTI collection. There are no additional constraints on subjects, actions or resources in this case.
+
+2026-02-02 12:32:13,401 - __main__ -  INFO - ****** Execution time: 16.941524900030345 seconds *****
+2026-02-02 12:32:13,401 - __main__ -  INFO - *** using: stage1_deepseek:latest
+2026-02-02 12:32:13,401 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:32:33,264 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:32:33,267 - __main__ -  INFO - ****** Execution time: 19.237858300097287 seconds *****
+2026-02-02 12:32:33,268 - __main__ -  INFO - *** using: stage1_deepseek:latest
+2026-02-02 12:32:33,269 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:32:33,269 - __main__ -  INFO - [NLSPEC]=Scientific papers which belong to the CNR-ISTI collection can be accessed only by professors of the Computer-Science Faculty, on Mondays, from 10 AM to 2 PM
+2026-02-02 12:33:53,526 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:33:53,526 - __main__ -  INFO - EFFECT: allow
+SUBJECTS: [{Subject.name : "professor", Subject.properties: ["of the Computer-Science Faculty"]}]
+ACTIONS: [{Action.name : "access", Action.properties: ["on Mondays", "from 10 AM to 2 PM"]}]
+RESOURCES: [{Resource.name : "scientific papers", Resource.properties: ["belong to the CNR-ISTI collection"]}]
+
+```python
+def analyze_NLSPEC(nlspec):
+    effect, subjects, actions, resources = nlspec.split('SUBJECTS:')[0].strip().split('\n'), \
+                                            [{'Subject.name': x.strip() for x in y.split(': ')[1].replace("[", "").replace("]", "").split(', ')} 
+                                             for y in nlspec.split('SUBJECTS:')[1].split('\n') if '{' in y], \
+                                            [{'Action.name': x.strip() for x in y.split(': ')[1].replace("[", "").replace("]", "").split(', ')} 
+                                             for y in nlspec.split('ACTIONS:')[1].split('\n') if '{' in y], \
+                                            [{'Resource.name': x.strip() for x in y.split(': ')[1].replace("[", "").replace("]", "").split(', ')} 
+                                             for y in nlspec.split('RESOURCES:')[1].split('\n') if '{' in y]
+    return {'EFFECT': effect[0].split(':')[1].strip(), 'SUBJECTS': subjects, 'ACTIONS': actions, 'RESOURCES': resources}
+```
+
+This function takes an NLSPEC string as input and returns a dictionary with the extracted semantic elements. The function splits the NLSPEC into effect, subjects, actions, and resources sections using '\n' as delimiter. It then extracts the name and properties of each subject, action, and resource by splitting at ': ' and removing brackets [].
+The result is a dictionary with keys 'EFFECT', 'SUBJECTS', 'ACTIONS', and 'RESOURCES'. Each value is a list of dictionaries where each dictionary represents one entity. The key-value pairs in the dictionaries are separated by ', '. 
+
+Please note that this function assumes that the input NLSPEC string follows the exact format you provided, with correct capitalization and spacing. If the format changes, the function may not work as expected.
+
+2026-02-02 12:33:53,526 - __main__ -  INFO - ****** Execution time: 79.35381140001118 seconds *****
+2026-02-02 12:33:53,526 - __main__ -  INFO - *** using: stage1_deepseek:latest
+2026-02-02 12:33:53,526 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:34:17,494 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:34:17,494 - __main__ -  INFO - ****** Execution time: 23.29070380004123 seconds *****
+2026-02-02 12:34:17,509 - __main__ -  INFO - *** using: stage1_deepseek:latest
+2026-02-02 12:34:17,509 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:34:17,509 - __main__ -  INFO - [NLSPEC]=Students logged as Phd can access the https://ISTI-CNR/PhDStudents services  from the 192.168.1.0/24 or the 10.0.0.0/16 authorized subnets.
+2026-02-02 12:34:45,519 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:34:45,519 - __main__ -  INFO - EFFECT: allow
+SUBJECTS: [{Subject.name : "Phd", Subject.properties: ["logged as Phd"]}]
+ACTIONS: [{Action.name : "access", Action.properties: []}]
+RESOURCES: [{Resource.name : "https://ISTI-CNR/PhDStudents services", Resource.properties: ["from the 192.168.1.0/24 or the 10.0.0.0/16 authorized subnets"]}]
+
+This is based on the given NLSPEC, which states that Phd students who are logged in can access a specific service (https://ISTI-CNR/PhDStudents) from certain authorized subnets. The subject is "Phd", action is "access" and resource is the service URL along with its properties.
+
+2026-02-02 12:34:45,519 - __main__ -  INFO - ****** Execution time: 27.489693300100043 seconds *****
+2026-02-02 12:34:45,519 - __main__ -  INFO - *** using: stage1_deepseek:latest
+2026-02-02 12:34:45,519 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:34:45,535 - __main__ -  INFO - [NLSPEC]=Students who are logged in as PhD students can access the services at https://ISTI-CNR/PhDStudents only if they connect from one of the authorized subnets: 192.168.1.0/24 or 10.0.0.0/16.
+2026-02-02 12:35:25,185 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:35:25,186 - __main__ -  INFO - Here is the structure you need to return based on your NLSPEC:
+
+```python
+NLSPEC = {
+    "EFFECT": "allow",
+    "SUBJECTS": [{
+        "Subject.name": "Student", 
+        "Subject.properties": ["logged in as PhD student"]
+    }],
+    "ACTIONS": [{
+        "Action.name": "access services", 
+        "Action.properties": []
+    }],
+    "RESOURCES": [{
+        "Resource.name": "https://ISTI-CNR/PhDStudents", 
+        "Resource.properties": ["authorized subnets: 192.168.1.0/24 or 10.0.0.0/16"]
+    }]
+}
+```
+This structure represents the access control rule specified in your NLSPEC. The "SUBJECTS" field contains information about the students who are logged in as PhD students, the "ACTIONS" field contains information about the actions that can be performed (access services), and the "RESOURCES" field contains information about the resources that can be accessed (the https://ISTI-CNR/PhDStudents service).
+
+2026-02-02 12:35:25,186 - __main__ -  INFO - ****** Execution time: 38.96890960005112 seconds *****
+2026-02-02 12:35:25,187 - __main__ -  INFO - *** using: stage1_qwen:latest
+2026-02-02 12:35:25,188 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:35:25,188 - __main__ -  INFO - [NLSPEC]=Everyone can read or write documents stored in the https://ISTI-CNR/Public repository
+2026-02-02 12:35:55,854 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:35:55,854 - __main__ -  INFO - EFFECT: allow  
+SUBJECTS: [{Subject.name : "everyone"}]  
+ACTIONS: [{Action.name : "read"}, {Action.name : "write"}]  
+RESOURCES: [{Resource.name : "documents", Resource.properties: ["stored in the https://ISTI-CNR/Public repository"]}]
+2026-02-02 12:35:55,854 - __main__ -  INFO - ****** Execution time: 30.15461580012925 seconds *****
+2026-02-02 12:35:55,855 - __main__ -  INFO - *** using: stage1_qwen:latest
+2026-02-02 12:35:55,855 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:35:55,855 - __main__ -  INFO - [NLSPEC]=All subjects are permitted to perform the actions read and write on any resource whose repository location is https://ISTI-CNR/Public.
+2026-02-02 12:36:06,095 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:36:06,095 - __main__ -  INFO - EFFECT: allow  
+SUBJECTS: [{Subject.name : "all subjects", Subject.properties: []}]  
+ACTIONS: [{Action.name : "read"}, {Action.name : "write"}]  
+RESOURCES: [{Resource.name : "any resource", Resource.properties: ["repository location is https://ISTI-CNR/Public"]}]
+2026-02-02 12:36:06,098 - __main__ -  INFO - ****** Execution time: 9.757408800069243 seconds *****
+2026-02-02 12:36:06,103 - __main__ -  INFO - *** using: stage1_qwen:latest
+2026-02-02 12:36:06,103 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:36:06,103 - __main__ -  INFO - [NLSPEC]=Scientific papers which belong to the CNR-ISTI collection can be downloaded only by professors
+2026-02-02 12:36:15,568 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:36:15,568 - __main__ -  INFO - EFFECT: allow  
+SUBJECTS: [{Subject.name : "professor", Subject.properties: []}]  
+ACTIONS: [{Action.name : "download", Action.properties: []}]  
+RESOURCES: [{Resource.name : "scientific papers", Resource.properties: ["belong to the CNR-ISTI collection"]}]
+2026-02-02 12:36:15,568 - __main__ -  INFO - ****** Execution time: 8.966055700089782 seconds *****
+2026-02-02 12:36:15,571 - __main__ -  INFO - *** using: stage1_qwen:latest
+2026-02-02 12:36:15,571 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:36:25,408 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:36:25,417 - __main__ -  INFO - ****** Execution time: 9.334027000004426 seconds *****
+2026-02-02 12:36:25,421 - __main__ -  INFO - *** using: stage1_qwen:latest
+2026-02-02 12:36:25,421 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:36:25,421 - __main__ -  INFO - [NLSPEC]=Scientific papers which belong to the CNR-ISTI collection can be accessed only by professors of the Computer-Science Faculty, on Mondays, from 10 AM to 2 PM
+2026-02-02 12:36:38,442 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:36:38,442 - __main__ -  INFO - EFFECT: allow  
+SUBJECTS: [{Subject.name : "professors", Subject.properties: ["of the Computer-Science Faculty"]}]  
+ACTIONS: [{Action.name : "access", Action.properties: ["on Mondays", "from 10 AM to 2 PM"]}]  
+RESOURCES: [{Resource.name : "scientific papers", Resource.properties: ["belong to the CNR-ISTI collection"]}]
+2026-02-02 12:36:38,442 - __main__ -  INFO - ****** Execution time: 12.51277649984695 seconds *****
+2026-02-02 12:36:38,454 - __main__ -  INFO - *** using: stage1_qwen:latest
+2026-02-02 12:36:38,454 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:36:52,031 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:36:52,047 - __main__ -  INFO - EFFECT: allow  
+SUBJECTS: [{Subject.name : "professors", Subject.properties: ["from the Computer Science Faculty"]}]  
+ACTIONS: [{Action.name : "access", Action.properties: ["only on Mondays", "between 10:00 AM and 2:00 PM"]}]  
+RESOURCES: [{Resource.name : "scientific papers", Resource.properties: ["in the CNR-ISTI collection"]}]
+2026-02-02 12:36:52,047 - __main__ -  INFO - ****** Execution time: 13.066671600099653 seconds *****
+2026-02-02 12:36:52,049 - __main__ -  INFO - *** using: stage1_qwen:latest
+2026-02-02 12:36:52,049 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:36:52,049 - __main__ -  INFO - [NLSPEC]=Students logged as Phd can access the https://ISTI-CNR/PhDStudents services  from the 192.168.1.0/24 or the 10.0.0.0/16 authorized subnets.
+2026-02-02 12:37:08,922 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:37:08,922 - __main__ -  INFO - EFFECT: allow  
+SUBJECTS: [{Subject.name : "Students", Subject.properties: ["logged as Phd"]}]  
+ACTIONS: [{Action.name : "access", Action.properties: []}]  
+RESOURCES: [{Resource.name : "https://ISTI-CNR/PhDStudents services", Resource.properties: []}]  
+SUBNETS: [{Subnet.name : "192.168.1.0/24"}, {Subnet.name : "10.0.0.0/16"}]
+2026-02-02 12:37:08,922 - __main__ -  INFO - ****** Execution time: 16.34756370005198 seconds *****
+2026-02-02 12:37:08,931 - __main__ -  INFO - *** using: stage1_qwen:latest
+2026-02-02 12:37:08,932 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:37:08,934 - __main__ -  INFO - [NLSPEC]=Students who are logged in as PhD students can access the services at https://ISTI-CNR/PhDStudents only if they connect from one of the authorized subnets: 192.168.1.0/24 or 10.0.0.0/16.
+2026-02-02 12:37:27,848 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:37:27,864 - __main__ -  INFO - EFFECT: allow  
+SUBJECTS: [{Subject.name : "Students", Subject.properties: ["logged in as PhD students"]}]  
+ACTIONS: [{Action.name : "access the services", Action.properties: []}]  
+RESOURCES: [{Resource.name : "services at https://ISTI-CNR/PhDStudents", Resource.properties: []}]  
+SUBJECTPROPERTIES: [{SubjectProperty.name : "connected from one of the authorized subnets", SubjectProperty.value: ["192.168.1.0/24", "10.0.0.0/16"]}]
+2026-02-02 12:37:27,864 - __main__ -  INFO - ****** Execution time: 18.4311863000039 seconds *****
+2026-02-02 12:37:27,864 - __main__ -  INFO - *** using: stage1_mistral:latest
+2026-02-02 12:37:27,864 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:37:27,864 - __main__ -  INFO - [NLSPEC]=Everyone can read or write documents stored in the https://ISTI-CNR/Public repository
+2026-02-02 12:38:06,385 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:38:06,386 - __main__ -  INFO -  EFFECT: allow
+SUBJECTS: [{Subject.name : "everyone"}]
+ACTIONS: [{Action.name : ["read", "write"]}]
+RESOURCES: [{Resource.name : "documents", Resource.properties: ["stored in the https://ISTI-CNR/Public repository"]}]
+2026-02-02 12:38:06,388 - __main__ -  INFO - ****** Execution time: 37.855074000079185 seconds *****
+2026-02-02 12:38:06,388 - __main__ -  INFO - *** using: stage1_mistral:latest
+2026-02-02 12:38:06,388 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:38:06,393 - __main__ -  INFO - [NLSPEC]=All subjects are permitted to perform the actions read and write on any resource whose repository location is https://ISTI-CNR/Public.
+2026-02-02 12:38:17,675 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:38:17,675 - __main__ -  INFO -  EFFECT: permit
+SUBJECTS: [{Subject.name : "subject", Subject.properties: []}]
+ACTIONS: [{Action.name : ["read", "write"]}, {Action.properties: []}]
+RESOURCES: [{Resource.name : "any resource", Resource.properties: ["whose repository location is https://ISTI-CNR/Public"]}]
+2026-02-02 12:38:17,675 - __main__ -  INFO - ****** Execution time: 10.6220958000049 seconds *****
+2026-02-02 12:38:17,675 - __main__ -  INFO - *** using: stage1_mistral:latest
+2026-02-02 12:38:17,675 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:38:17,675 - __main__ -  INFO - [NLSPEC]=Scientific papers which belong to the CNR-ISTI collection can be downloaded only by professors
+2026-02-02 12:38:27,679 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:38:27,679 - __main__ -  INFO -  EFFECT: allow
+SUBJECTS: [{Subject.name : "user", Subject.properties: ["is a professor"]}]
+ACTIONS: [{Action.name : "download"}]
+RESOURCES: [{Resource.name : "scientific papers", Resource.properties: ["belong to the CNR-ISTI collection"]}]
+2026-02-02 12:38:27,679 - __main__ -  INFO - ****** Execution time: 9.448279300006106 seconds *****
+2026-02-02 12:38:27,682 - __main__ -  INFO - *** using: stage1_mistral:latest
+2026-02-02 12:38:27,682 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:38:38,161 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:38:38,161 - __main__ -  INFO -  EFFECT: allow
+SUBJECTS: [{Subject.name : "subject", Subject.properties: ["role is professor"]}]
+ACTIONS: [{Action.name : "download"}]
+RESOURCES: [{Resource.name : "scientific paper", Resource.properties: ["part of the CNR-ISTI collection"]}]
+2026-02-02 12:38:38,162 - __main__ -  INFO - ****** Execution time: 9.817283099982888 seconds *****
+2026-02-02 12:38:38,164 - __main__ -  INFO - *** using: stage1_mistral:latest
+2026-02-02 12:38:38,164 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:38:38,164 - __main__ -  INFO - [NLSPEC]=Scientific papers which belong to the CNR-ISTI collection can be accessed only by professors of the Computer-Science Faculty, on Mondays, from 10 AM to 2 PM
+2026-02-02 12:38:52,679 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:38:52,679 - __main__ -  INFO -  EFFECT: allow
+SUBJECTS: [{Subject.name : "user", Subject.properties: ["professor of the Computer-Science Faculty"]}]
+ACTIONS: [{Action.name : "access", Action.properties: ["on Mondays", "from 10 AM to 2 PM"]}]
+RESOURCES: [{Resource.name : "scientific papers", Resource.properties: ["belong to the CNR-ISTI collection"]}]
+2026-02-02 12:38:52,679 - __main__ -  INFO - ****** Execution time: 13.909165000077337 seconds *****
+2026-02-02 12:38:52,679 - __main__ -  INFO - *** using: stage1_mistral:latest
+2026-02-02 12:38:52,679 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:39:08,182 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:39:08,182 - __main__ -  INFO -  EFFECT: allow
+SUBJECTS: [{Subject.name : "user", Subject.properties: ["belongs to the Computer Science Faculty", Subject.role : "professor"]}]
+ACTIONS: [{Action.name : "access", Action.properties: ["on Mondays between 10:00 AM and 2:00 PM"]}]
+RESOURCES: [{Resource.name : "scientific papers", Resource.properties: ["belong to the CNR-ISTI collection"]}]
+2026-02-02 12:39:08,182 - __main__ -  INFO - ****** Execution time: 14.839614199940115 seconds *****
+2026-02-02 12:39:08,182 - __main__ -  INFO - *** using: stage1_mistral:latest
+2026-02-02 12:39:08,182 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:39:08,182 - __main__ -  INFO - [NLSPEC]=Students logged as Phd can access the https://ISTI-CNR/PhDStudents services  from the 192.168.1.0/24 or the 10.0.0.0/16 authorized subnets.
+2026-02-02 12:39:25,675 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:39:25,676 - __main__ -  INFO -  EFFECT: allow
+SUBJECTS: [{Subject.name : "user", Subject.properties: ["logged as Phd", "belongs to the Students group"]}]
+ACTIONS: [{Action.name : "access"}]
+RESOURCES: [{Resource.name : "https://ISTI-CNR/PhDStudents services", Resource.properties: ["located in the 192.168.1.0/24 or the 10.0.0.0/16 authorized subnets"]}]
+2026-02-02 12:39:25,676 - __main__ -  INFO - ****** Execution time: 16.801562500186265 seconds *****
+2026-02-02 12:39:25,683 - __main__ -  INFO - *** using: stage1_mistral:latest
+2026-02-02 12:39:25,683 - __main__ -  INFO - *** Extracting Semantic Entities for this sentence: 
+2026-02-02 12:39:25,684 - __main__ -  INFO - [NLSPEC]=Students who are logged in as PhD students can access the services at https://ISTI-CNR/PhDStudents only if they connect from one of the authorized subnets: 192.168.1.0/24 or 10.0.0.0/16.
+2026-02-02 12:39:43,023 - __main__ -  INFO - ------->Structure extracted:
+2026-02-02 12:39:43,023 - __main__ -  INFO -  EFFECT: allow
+SUBJECTS: [{Subject.name : "user", Subject.properties: ["is a Student", "logged in as PhD student"]}]
+ACTIONS: [{Action.name : "access"}]
+RESOURCES: [{Resource.name : "services at https://ISTI-CNR/PhDStudents", Resource.properties: ["authorized subnets: 192.168.1.0/24 or 10.0.0.0/16"]}]
+2026-02-02 12:39:43,023 - __main__ -  INFO - ****** Execution time: 16.68362640007399 seconds *****
