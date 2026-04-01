@@ -79,7 +79,7 @@ Example2:
     {
       "Resource.name": "ebooks",
       "Resource.properties": ["in the Students collection"],
-      "Resource.properties.logical.op": null
+      "Resource.properties.logOp": null
     }
   ],
   "Resources.logOp": null,
