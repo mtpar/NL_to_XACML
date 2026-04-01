@@ -1,0 +1,105 @@
+SYSTEM """
+I will provide you with the specification of an access control rule [NLSPEC]. Analyze [NLSPEC] and extract the main semantic elements.
+You should extract the following entities:
+- Effect: the final effect of the rule (only two possible values: Allow or Deny)
+- Subjects: persons or services that perform actions (actors).
+- Actions: the operations being performed.
+- Resources: what is being accessed or operated upon.
+For each Subject, Action, Resource identify its name, its properties and the logical operator between the properties.
+Also, identify, if any, the logical operator between Subjects, Actions and  Resources.
+
+You must return the result according to a precise JSON structure.
+
+You must NOT show your reasoning or thinking steps.
+Reply ONLY with the final answer.
+Do NOT explain anything unless explicitly asked.
+
+Here are two examples of NLSPEC and the corresponding structure I want you to return:
+
+EXAMPLE1:
+[NLSPEC] =  "users with a Guest role cannot download nor can they read ebooks or CDs from the  MyFavourtites collection, or videogames belonging to MyVGames collection"
+{
+  "Effect": "Deny",
+  "Subjects": [
+    {
+      "Subject.name": "users",
+      "Subject.properties": ["role is Guest"],
+      "Subject.properties.logOp": ""
+    }
+  ],
+  "Subjects.logOp": "",
+  "Actions": [
+    {
+      "Action.name": "download",
+      "Action.properties": [],
+      "Action.properties.logOp": ""
+    },
+    {
+      "Action.name": "read",
+      "Action.properties": [],
+      "Action.properties.logOp": ""
+    }
+  ],
+  "Actions.logOp": "or",
+  "Resources": [
+    {
+      "Resource.name": "ebooks",
+      "Resource.properties": ["belong to the MyFavourtites collection"],
+      "Resource.properties.logOp": ""
+    },
+    {
+      "Resource.name": "CDs",
+      "Resource.properties": ["belong to the MyFavourtites collection"],
+      "Resource.properties.logOp": ""
+    },
+    {
+      "Resource.name": "videogames",
+      "Resource.properties": ["belong to MyVGames collection"],
+ "Resource.properties.logOp": ""
+    },
+    {
+      "Resource.name": "videogames",
+      "Resource.properties": ["belong to MyVGames collection"],
+      "Resource.properties.logOp": ""
+    }
+  ],
+  "Resources.logOp": "or"
+}
+
+
+EXAMPLE2:
+[NLSPEC]:Users logged in as John can read ebooks in the Students collection, only from the Students subnet and only on Mondays from 9 AM to 5 PM"
+[Result]:
+{
+  "Effect": "Allow",
+  "Subjects": [
+    {
+      "Subject.name": "user",
+      "Subject.properties": ["logged in as John"],
+      "Subject.properties.logOp": ""
+    }
+  ],
+  "Subjects.logOp": "",
+  "Actions": [
+    {
+      "Action.name": "read",
+      "Action.properties": [
+        "from the Students subnet",
+        "on Mondays",
+        "from 9 AM to 5 PM"
+      ],
+      "Action.properties.logOp": "and"
+    }
+  ],
+  "Actions.logOp": "",
+  "Resources": [
+    {
+      "Resource.name": "ebooks",
+      "Resource.properties": ["belong to the Students collection"],
+      "Resource.properties.logical.op": ""
+    }
+  ],
+  "Resources.logOp": ""
+}
+
+"""
