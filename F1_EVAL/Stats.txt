@@ -1,0 +1,384 @@
+1. CODEGEMMA
+
+=== Soft F1 per entity type (macro-avg over rows) ===
+             precision  recall     f1
+entity_type                          
+action           0.751   0.755  0.753
+resource         0.758   0.762  0.759
+subject          0.904   0.906  0.905
+
+=== Overall soft F1 ===
+precision    0.804
+recall       0.808
+f1           0.806
+
+----->>Statistics for codegemma
+
+---  | entity: action ---
+  mean        0.753
+  median      1.000
+  std         0.376
+  weighted    0.780
+  25th pct    0.682
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: resource ---
+  mean        0.759
+  median      1.000
+  std         0.355
+  weighted    0.763
+  25th pct    0.600
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: subject ---
+  mean        0.905
+  median      1.000
+  std         0.245
+  weighted    0.933
+  25th pct    1.000
+  75th pct    1.000
+  min         0.000
+  max         1.000
+  
+  ---------------------------------
+  2. CODEGEMMA_SR
+  
+  === Soft F1 per entity type (macro-avg over rows) ===
+             precision  recall     f1
+entity_type                          
+action           0.789   0.795  0.792
+resource         0.754   0.759  0.756
+subject          0.889   0.891  0.890
+
+=== Overall soft F1 ===
+precision    0.811
+recall       0.815
+f1           0.812
+
+
+  ----->>Statistics for codegemma_sr
+
+---  | entity: action ---
+  mean        0.792
+  median      1.000
+  std         0.338
+  weighted    0.815
+  25th pct    0.704
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: resource ---
+  mean        0.756
+  median      1.000
+  std         0.354
+  weighted    0.758
+  25th pct    0.597
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: subject ---
+  mean        0.890
+  median      1.000
+  std         0.237
+  weighted    0.918
+  25th pct    0.897
+  75th pct    1.000
+  min         0.000
+  max         1.000
+  
+ ------------------------------------------------------------------ 
+  CODELLAMA
+  
+  === Soft F1 per entity type (macro-avg over rows) ===
+             precision  recall     f1
+entity_type                          
+action           0.798   0.801  0.799
+resource         0.729   0.724  0.726
+subject          0.893   0.892  0.893
+
+=== Overall soft F1 ===
+precision    0.807
+recall       0.806
+f1           0.806
+
+
+----->>Statistics for codellama
+
+---  | entity: action ---
+  mean        0.799
+  median      1.000
+  std         0.290
+  weighted    0.827
+  25th pct    0.680
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: resource ---
+  mean        0.726
+  median      0.887
+  std         0.363
+  weighted    0.737
+  25th pct    0.554
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: subject ---
+  mean        0.893
+  median      1.000
+  std         0.245
+  weighted    0.925
+  25th pct    0.942
+  75th pct    1.000
+  min         0.000
+  max         1.000
+  
+  --------------------------------------------
+  CODELLAMA_SR
+  
+  === Soft F1 per entity type (macro-avg over rows) ===
+             precision  recall     f1
+entity_type                          
+action           0.859   0.860  0.859
+resource         0.764   0.758  0.761
+subject          0.880   0.878  0.879
+
+=== Overall soft F1 ===
+precision    0.834
+recall       0.832
+f1           0.833
+
+
+Saved: soft_f1_results.csv, soft_f1_per_row.csv
+----->>Statistics for codellama_sr
+
+---  | entity: action ---
+  mean        0.859
+  median      1.000
+  std         0.228
+  weighted    0.879
+  25th pct    0.728
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: resource ---
+  mean        0.761
+  median      1.000
+  std         0.341
+  weighted    0.759
+  25th pct    0.570
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: subject ---
+  mean        0.879
+  median      1.000
+  std         0.233
+  weighted    0.912
+  25th pct    0.855
+  75th pct    1.000
+  min         0.000
+  max         1.000
+  
+  
+    --------------------------------------------
+    MISTRAL
+	
+	=== Soft F1 per entity type (macro-avg over rows) ===
+             precision  recall     f1
+entity_type                          
+action           0.838   0.842  0.840
+resource         0.790   0.794  0.792
+subject          0.911   0.921  0.915
+
+=== Overall soft F1 ===
+precision    0.846
+recall       0.853
+f1           0.849
+
+
+----->>Statistics for mistral
+
+---  | entity: action ---
+  mean        0.840
+  median      1.000
+  std         0.304
+  weighted    0.856
+  25th pct    0.815
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: resource ---
+  mean        0.792
+  median      1.000
+  std         0.343
+  weighted    0.806
+  25th pct    0.743
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: subject ---
+  mean        0.915
+  median      1.000
+  std         0.221
+  weighted    0.951
+  25th pct    1.000
+  75th pct    1.000
+  min         0.000
+  max         1.000
+  
+    --------------------------------------------
+    MISTRAL_SR
+	
+	=== Soft F1 per entity type (macro-avg over rows) ===
+             precision  recall     f1
+entity_type                          
+action           0.822   0.828  0.825
+resource         0.770   0.773  0.771
+subject          0.910   0.921  0.915
+
+=== Overall soft F1 ===
+precision    0.834
+recall       0.841
+f1           0.837
+
+
+----->>Statistics for mistral_sr
+
+---  | entity: action ---
+  mean        0.825
+  median      1.000
+  std         0.315
+  weighted    0.851
+  25th pct    0.774
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: resource ---
+  mean        0.771
+  median      1.000
+  std         0.352
+  weighted    0.790
+  25th pct    0.702
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: subject ---
+  mean        0.915
+  median      1.000
+  std         0.221
+  weighted    0.950
+  25th pct    1.000
+  75th pct    1.000
+  min         0.000
+  max         1.000
+  
+	---------------------------------------------------
+	QWEN
+	
+	=== Soft F1 per entity type (macro-avg over rows) ===
+             precision  recall     f1
+entity_type                          
+action           0.898   0.901  0.899
+resource         0.743   0.749  0.745
+subject          0.918   0.918  0.918
+
+=== Overall soft F1 ===
+precision    0.853
+recall       0.856
+f1           0.854
+
+
+----->>Statistics for qwen
+
+---  | entity: action ---
+  mean        0.899
+  median      1.000
+  std         0.177
+  weighted    0.916
+  25th pct    0.815
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: resource ---
+  mean        0.745
+  median      1.000
+  std         0.365
+  weighted    0.750
+  25th pct    0.604
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: subject ---
+  mean        0.918
+  median      1.000
+  std         0.229
+  weighted    0.953
+  25th pct    1.000
+  75th pct    1.000
+  min         0.000
+  max         1.000
+  
+  
+	-------------------------------------------------------
+	QWEN_SR
+	
+	=== Soft F1 per entity type (macro-avg over rows) ===
+             precision  recall     f1
+entity_type                          
+action           0.907   0.916  0.911
+resource         0.805   0.817  0.810
+subject          0.906   0.906  0.906
+
+=== Overall soft F1 ===
+precision    0.873
+recall       0.880
+f1           0.876
+
+
+----->>Statistics for qwen_sr
+
+---  | entity: action ---
+  mean        0.911
+  median      1.000
+  std         0.176
+  weighted    0.928
+  25th pct    0.862
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: resource ---
+  mean        0.810
+  median      1.000
+  std         0.305
+  weighted    0.822
+  25th pct    0.771
+  75th pct    1.000
+  min         0.000
+  max         1.000
+
+---  | entity: subject ---
+  mean        0.906
+  median      1.000
+  std         0.229
+  weighted    0.942
+  25th pct    1.000
+  75th pct    1.000
+  min         0.000
+  max         1.000

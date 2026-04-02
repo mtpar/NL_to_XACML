@@ -1,0 +1,122 @@
+row_num,id,subject_names,subject_properties,resource_names,resource_properties,actions
+1,1857,Employees,ranked as professors | ranked as tenured assistant professors,graduate admission related tables,in the database,select | insert | delete
+2,1858,Customer Service Reps | Pharmacists | Billing Reps,,customer name | date of birth,,collect | use
+3,1859,Customer service reps,,credit card number,for the purpose of updating records,use
+4,1860,Customer Service Reps | Pharmacists | Billing Reps,,customer name | e-mail addresses,,collect | use
+5,1861,Shipping Reps,,customer name | customer mailing addresses | orders,,use
+6,1862,Billing Reps,,credit card numbers | order processing,,use
+7,1863,Customer Service Reps,,credit card numbers | order processing,,modify
+8,1864,Customer service reps | ducks | Lawyers,,,,use credit card number
+9,1865,Admission nurses,,SSN,,reviewing eligibility
+10,1866,Customer service reps | managers,,name | social security number,,collect | use
+11,1867,organisation,,email addresses,,answer inquiries
+12,1868,Supervisors,,personal information,,collect
+13,1869,Financial consultants,,customer name,,collect | use
+14,1870,Financial analysts,,customer accounts,,make loan decisions
+15,1871,Management,,customer transactions,,report
+16,1872,director | employees,,package,,choose
+17,1874,director,,employee | manager,,promote
+18,1875,employee,,bonus information,,appoint | read
+19,1877,supervisors,two different supervisors must authorize the invoice,invoice,total amount exceeds one million,
+20,1878,professor,,project,,review
+21,1879,business office manager | dean,,,,approve a project
+22,1880,PC chair,,PC members,,appoints
+23,1881,PC member,,,,resign membership
+24,1882,reviewer,,paper,,assign | sub-review
+25,1883,Faculty,,InternalGrades | ExternalGrades,,Assign
+26,1886,members,role is Faculty Family,External-Grades,,
+27,1887,faculty member,,,,assign grades
+28,1888,users,not a faculty member,courses,,enroll
+29,1889,manager,,personal | financial | clinical | medical,,
+30,1891,care plan,updated,resident | responsible person,,consult
+31,1892,manager,,resident information,,delete
+32,1893,health care workers,,resident data,,sign a confidentiality agreement
+33,1895,staff,,emergency details,,
+34,1896,manager,,older medical record,,seek | obtain
+35,1898,visiting doctor,,resident,not his or her patient,examine
+36,1899,,,,,
+37,1900,person,,information,stored about the person,access
+38,1901,user,already grant diagnosing right,medicine orders,,create
+39,1902,user,Pharmacy System,medicines,to the medicine dispenser,load
+40,1903,Pharmacy System,,medicine dispenser,reports and status information,get
+41,1904,Pharmacy System,,dispenser | medicines,,load
+42,1905,Doctors | Nurses,,patient records,,read
+43,1906,any,e-mail name in the med.example.com domain,any,,any
+44,1907,person,identified by patient number,record,designated patient is the person,read
+45,1908,person,,record,designated parent or guardian of the patient | patient is under 16 years of age,read
+46,1909,physician,,medical element,designated primary care physician for the patient,write
+47,1910,Administrators,,administrative pages,,
+48,1911,Guests,,public areas,,
+49,1912,Owners,,,,access account | move funds | review transactions
+50,1913,Planners,,sites financial planning and tax preparation functions,,
+51,1914,Payers,,site's bill paying function,,use
+52,1915,Data Owners,,information,,transfer ownership
+53,1916,Data Owners,,access rights,type of access given to other users,determine
+54,1917,users,do not have access to information,information,file size | file name | directory path,
+55,1918,users,,documents,lower classification than the one granted,read
+56,1919,users,,secret | top secret,can post information to,write
+57,1920,users,,objects,same classification as the user,read | write
+58,1921,Staff,,HP Laserjet 1,,print
+59,1922,David,,Alice,manager role,assign
+60,1923,John,,clerk,to users from department A,assign
+61,1924,Clerk,,database,,read
+62,1925,Owners,,Name,,read
+63,1926,Clerks,,Name | Date of birth | Address | Postcode,,add | change
+64,1927,All members of FACULTY,,INTERNALGRADES | EXTERNALGRADES,,ASSIGN
+65,1928,STUDENT,,EXTERNALGRADES,,RECEIVE
+66,1929,author,,paper,,submit
+67,1930,reviewer,assigned to review paper,paper,,submit a review
+68,1931,reviewer,submitted a review for paper,scores for paper,,read
+69,1932,residents,,information stored about residents,,access
+70,1934,Supervisor,,,,execute the write a check use case
+71,1935,user,,invoice,,record | verify
+72,1938,subject,,project,submitted by the subject,review
+73,1939,subject,reviewed projects | submitted projects,projects,,approve
+74,1940,Authors,,Papers,cannot be changed,change
+75,1941,PC chair,,paper,,assign
+76,1943,reviewer,,,,resign
+77,1944,sub-reviewer,,,,resign
+78,1945,members of Student,,,,Assign ExternalGrades
+79,1946,users,,ExternalGrades,,Receive | Assign
+80,1948,student,,,,assign grades
+81,1952,health care worker,,,,
+82,1954,doctor,,resident medical records | private notes of the residentâ€™s usual doctor,temporary access,
+83,1955,residents,,network,view only their own data,hook into
+84,1956,,,,,
+85,1957,any,,medicines,to the medicine dispenser,load
+86,1959,administrator,,medical elements of a patient record,,read | write
+87,1963,members,of STUDENT,,,ASSIGN EXTERNALGRADES
+88,1964,user,,EXTERNALGRADES,,RECEIVE | ASSIGN
+89,1965,subject,is not pc-chair | is not admin,,,set the meeting flag
+90,1966,users,not pc-chair | not admin,paper-review-rc,conflicted,
+91,1967,Authors,,scores,,read
+92,1968,Doctors,,,,
+93,2123,manager,,,,add new resident
+94,2124,manager,,care plan,of a resident,start | update
+95,2127,visiting doctor,,medical information,of residents,
+96,2128,visiting doctor,,patients medical records,,add entries
+97,2129,Managers,,ordinary employees,bonuses,read | set
+98,2131,*,,project,,submit
+99,2132,business office manager,,project,,submit
+100,2133,professors,,projects,,review
+101,2134,except,assistant professors,project,,review
+102,2135,PC members,,reviewers,for this paper,
+103,2136,author,,reviewers,for this paper,know
+104,2137,TA,,InternalGrades,,view | assign
+105,2138,TA,,ExternalGrades,,view | assign
+106,2139,user,,past medical records,when a resident is admitted,enter
+107,2140,she,,medical entries,,add
+108,2141,users,,private notes,of doctors,view
+109,2142,she,,legal agreement,on behalf of a resident,sign
+110,2143,Health care workers,,medical records,of residents | up to one year old,view
+111,2144,Health care workers,,older medical information,,view
+112,2145,Doctors,,residents,,add private notes
+113,2146,health care staff | manager,,private notes,about a resident,
+114,2147,Pharmacy System,,patient records,,read
+115,2148,Pharmacy System,,patient medicine orders,,read
+116,2149,Users,,Owner's account,,view
+117,2150,Users,,Owner's account,,make changes to
+118,2151,administrators,,,,change security label
+119,2152,not data owners,,resource security label,,make changes to
+120,2153,Owners,,,,change
+121,2154,Owners,,data,,read

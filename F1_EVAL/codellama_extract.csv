@@ -1,0 +1,122 @@
+subject_names,subject_properties,resource_names,resource_properties,actions,row_num,id
+Employees,ranked as professors | ranked as tenured assistant professors,graduate admission related tables,,select from | insert into | delete from,1,1857
+Customer Service Reps | Pharmacists | Billing Reps,,customer name and date of birth,,collect | use,2,1858
+customer service rep,,credit card number,,update records,3,1859
+Customer Service Reps | Pharmacists | Billing Reps,,customer name and e-mail addresses,,collect | use,4,1860
+Shipping Reps,,customer name | customer mailing addresses,,ship orders,5,1861
+Billing Reps,,order processing,,use credit card numbers,6,1862
+Customer Service Reps,,order processing,,modify credit card numbers,7,1863
+Customer service reps | ducks | Lawyers,,credit card number,,use credit card number,8,1864
+admission nurses,,SSN,,review eligibility,9,1865
+customer service reps and managers,,name and social security number,,collect | use,10,1866
+email address,,,,answer inquiries,11,1867
+Supervisors,,personal information,,collect,12,1868
+Financial Consultants,,customer name,,collect | use,13,1869
+Financial analysts,,loan decisions,,use customer accounts,14,1870
+Management,,customer transactions,,report,15,1871
+director,,options from the package,,give,16,1872
+director,,employee,,promote,17,1874
+employee,appoint another employee as his advocate,bonus information,read access,,18,1875
+,,invoice,total amount exceeds one million,,19,1877
+professor,,project,,review,20,1878
+business office manager | dean,,project,,approve,21,1879
+PC chair,,PC members,,appoint,22,1880
+PC member,,,,resign membership,23,1881
+Reviewer,assigned to review the paper,Paper,sub-reviewed by an agent who is not an author of the paper and has not been assigned the same paper by another reviewer,assign,24,1882
+Faculty,,InternalGrades | ExternalGrades,,Assign,25,1883
+members of the Faculty Family,,,,receive External-Grades,26,1886
+Faculty members,,,,assign grades,27,1887
+subject,not a faculty member,,,enroll in courses,28,1888
+manager,,information,about each resident,access,29,1889
+resident | responsible person,,care plan,,update,30,1891
+manager,,resident information,,delete,31,1892
+healthcare workers,,resident data,,access,32,1893
+staff,,emergency details,,access,33,1895
+manager,,older medical records,,seek access to,34,1896
+Visiting Doctor,,Resident,not normally the Visiting Doctor's patient,examine,35,1898
+resident | responsible person,consent,manager,notification,consent,36,1899
+person,is the subject,information stored about them,,access,37,1900
+user,granting diagnosing right,,,creating medicine orders,38,1901
+Pharmacy System,,medicines,,load,39,1902
+Pharmacy System,,reports and status information of the medicine dispenser,,get,40,1903
+Pharmacy System,,dispenser,,load medicines to the dispenser,41,1904
+Doctors | Nurses,,patient records,,read,42,1905
+any subject,has an e-mail name in the med.example.com domain,,,any action,43,1906
+person,patient number,record,designated patient,read,44,1907
+person,designated parent or guardian,record,patient is under 16 years of age,read,45,1908
+physician,designated primary care physician,medical element,,write,46,1909
+Administrators,,administrative pages,,access,47,1910
+Guests,,public areas of the site,,,48,1911
+owners,,,,access account | move funds | review transactions,49,1912
+planners,,sites,financial planning and tax preparation functions,access,50,1913
+Payers,,,,use the site's bill paying function,51,1914
+Data Owners,,information,,transfer ownership,52,1915
+Data Owners,,other users,,determine the type of access given to other users,53,1916
+users,access to information,information,,determine characteristics,54,1917
+users,,documents,classification is lower than the one granted,read,55,1918
+users,,A secret user | Top Secret resource,,write,56,1919
+users,,objects,classification is the same as the user's classification,read | write,57,1920
+Staff,,HP Laserjet 1,,print,58,1921
+David,,manager role,,assign,59,1922
+John,,clerk,from department A,assign,60,1923
+Clerk,,database,,read,61,1924
+Owners,,Name,,read,62,1925
+clerks,,Name | date of birth | Address | Postcode,,add | change,63,1926
+FACULTY,,INTERNALGRADES | EXTERNALGRADES,,ASSIGN,64,1927
+STUDENT,,,,RECEIVE EXTERNALGRADES,65,1928
+author,,paper,,submit,66,1929
+Reviewer,assigned to review the paper,,,submit a review for the paper,67,1930
+reviewer,has submitted a review for paper,paper,,read,68,1931
+resident,,information about the resident,stored by arrangement with the manager,access,69,1932
+Supervisor,,write a check,,execute,70,1934
+user,,invoice,,record | verify,71,1935
+subject,has submitted the project,project,,review,72,1938
+subject,approved a project | submitted a project,project,,approve,73,1939
+authors,,papers,,change,74,1940
+PC chair,,paper,,assign,75,1941
+Reviewer,has appointed a sub-reviewer for the paper,Reviewer,has resigned for the paper,,76,1943
+sub-reviewer,has already submitted his review,,,resign,77,1944
+Student,,,,Assign ExternalGrades,78,1945
+user | user,with role is Receiver | with role is Assigner,ExternalGrades,,Receive | Assign,79,1946
+Student,,,,assign grades,80,1948
+healthcare workers,,information,beyond their rights,,81,1952
+doctor,,resident medical records,,temporary access,82,1954
+residents,,data,belongs to the resident,hook into the network | view only their own data | make arbitrary changes,83,1955
+users,role is Guest | role is Dummy,ebooks | CDs | videogames,belong to the MyFavourtites collection | belong to the MyFavourtites collection | in the Forbidden directory | belong to MyVGames,download | read,84,1956
+users,role is Guest | role is Dummy,medicine dispenser,loading medicines,download | read,85,1957
+administrator,,medical elements of a patient record,,read | write,86,1959
+STUDENT,,,,ASSIGN EXTERNALGRADES,87,1963
+user,with roles,EXTERNALGRADES,,RECEIVE | ASSIGN,88,1964
+subject,not a pc-chair | not an admin,,,set the meeting flag,89,1965
+user,not a pc-chair | not an admin,paper-review-rc,conflicted with the user,,90,1966
+Authors,,scores,,read,91,1967
+Doctors,,confidentiality agreement,,sign,92,1968
+manager,,resident,,add a new resident,93,2123
+manager,,care plan,,start | update,94,2124
+visiting doctor,,medical information,belongs to residents,,95,2127
+visiting doctor,,patients medical records,,add entries,96,2128
+Managers,,ordinary employees bonuses,,read | set,97,2129
+subject,,,,submit project,98,2131
+business office manager,,,,submit a project,99,2132
+Professor,,Project,,review,100,2133
+assistant professors,,projects,,review,101,2134
+PC members,,reviewers for this paper,,know,102,2135
+author(s),of a paper,reviewers,for this paper,,103,2136
+TA,,InternalGrades,,view | assign,104,2137
+TA,,ExternalGrades,,view | assign,105,2138
+she,,past medical records,,enter,106,2139
+user,logged in as PHD,medical entries,,add,107,2140
+she,,private notes of doctors,,view,108,2141
+resident,sign,legal agreement,,sign,109,2142
+healthcare workers,,medical records,belong to residents | are up to one year old,view,110,2143
+healthcare workers,,medical information,older,,111,2144
+Doctors,,resident,,add private notes,112,2145
+resident,,private notes,,view,113,2146
+Pharmacy System,,patient records,,read,114,2147
+Pharmacy System,,patient medicine orders,,read,115,2148
+users,,Owner's account,,view,116,2149
+users,,Owner's account,,make changes,117,2150
+administrators,,resource,,change the security label of a resource,118,2151
+data owners,,resource,,make changes to a resource's security label,119,2152
+owners,,,,change,120,2153
+owners,,data,,read,121,2154

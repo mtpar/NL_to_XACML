@@ -1,0 +1,122 @@
+row_num,id,subject,resource,action
+1,1857,professors | tenured assistant professors,graduate admission related tables,select | insert | delete
+2,1858,Customer Service Reps | Pharmacists | Billing Reps,customer name | date of birth,collect | use
+3,1859,Customer service reps,credit card number,use
+4,1860,Customer Service Reps | Pharmacists | Billing Reps,customer name | e-mail addresses,collect | use
+5,1861,Shipping Reps,customer name | customer mailing addresses,use
+6,1862,Billing Reps,credit card numbers,use
+7,1863,Customer Service Reps,credit card numbers,modify
+8,1864,Customer service reps | ducks | Lawyers,credit card number,use
+9,1865,Admission nurses,SSN,use
+10,1866,Customer service reps | managers,name | social security number,collect | use
+11,1867,organisation,email addresses,use
+12,1868,Supervisors,personal information,collect
+13,1869,Financial consultants,customer name,collect | use
+14,1870,Financial analysts,customer accounts,use
+15,1871,Management,customer transactions,report
+16,1872,director,options,chooses
+17,1874,director,employee,promote
+18,1875,employee,employee,appoint
+19,1877,t superviso,e invoi,t authoriz
+20,1878,professor,same project,review
+21,1879,dean | business office manager,project,approve
+22,1880,PC chair,PC members,appoints
+23,1881,PC member,membership,resign
+24,1882,reviewer,paper,assign
+25,1883,members of Faculty,InternalGrades | ExternalGrades,Assign
+26,1886,members of role Faculty Family,External-Grades,receive
+27,1887,subject,grades,assign
+28,1888,subject,courses,enroll
+29,1889,manager,"information | personal, financial, clinical and medical information about each resident",access
+30,1891,,care plan,updated
+31,1892,manager,information about a resident,delete
+32,1893,health care workers,confidentiality agreement,sign
+33,1895,staff,emergency details,Access
+34,1896,,older medical record,access
+35,1898,visiting doctor,resident,examine
+36,1899,,This,permitted
+37,1900,person,information stored about them,access
+38,1901,user,diagnosing right,grant
+39,1902,user,medicines,load
+40,1903,Pharmacy System,reports | status information of the medicine dispenser,get
+41,1904,Pharmacy System,medicines,load
+42,1905,Doctors | Nurses,patient records,read
+43,1906,subject,action,perform
+44,1907,person,record,read
+45,1908,person,record,read
+46,1909,physician,medical element,write
+47,1910,Administrators,administrative pages,access
+48,1911,Guests,public areas of the site,access
+49,1912,Owners,account | review transactions | move funds,access
+50,1913,Planners,sites financial planning | tax preparation functions,access
+51,1914,Payers,site's bill paying function,use
+52,1915,Data Owners,ownership of information,transfer
+53,1916,Data Owners,type of access,determine
+54,1917,Users,characteristics | file size | file name | directory path,determine
+55,1918,users,lower classification,read
+56,1919,users,higher classification,write
+57,1920,users,objects,read | write
+58,1921,Staff,HP Laserjet 1,print
+59,1922,David,manager role,assign
+60,1923,John,clerk,assign
+61,1924,Clerk,database,read
+62,1925,Owners,Name,read
+63,1926,Clerks,Name | date of birth | Address | Postcode,add | change
+64,1927,members of FACULTY,INTERNALGRADES | EXTERNALGRADES,ASSIGN
+65,1928,members of STUDENT,EXTERNALGRADES,RECEIVE
+66,1929,author,paper,submit
+67,1930,reviewer,review for paper,submit
+68,1931,reviewer,scores for paper,read
+69,1932,resident,information,accessible
+70,1934,Supervisor,write a check use case,execute
+71,1935,user,same invoice,record | verify
+72,1938,subject,project,review
+73,1939,subject,projects,approve
+74,1940,,Authors of papers,changed
+75,1941,PC chair,paper,assign
+76,1943,reviewer,,resign
+77,1944,sub-reviewer,,resign
+78,1945,members of Student,ExternalGrades,Assign
+79,1946,user,resource ExternalGrades,Receive | Assign
+80,1948,subject,grades,assign
+81,1952,manager,repeated attempts,aware
+82,1954,,,
+83,1955,residents,network,hook
+84,1956,single user,critical task,performed
+85,1957,it,operations,perform
+86,1959,administrator,medical elements of a patient record,read | write
+87,1963,STUDENT,EXTERNALGRADES,ASSIGN
+88,1964,user with those roles,resource EXTERNALGRADES,RECEIVE | ASSIGN
+89,1965,he | she,meeting flag,set
+90,1966,he | she,paper-review-rc,see
+91,1967,Authors,scores,read
+92,1968,Doctors,confidentiality agreement,sign
+93,2123,manager,resident,add
+94,2124,manager,care plan of a resident,start | update
+95,2127,visiting doctor,medical information of residents,access
+96,2128,visiting doctor,entries,add
+97,2129,Managers,employeesâ€™ bonus,read | set
+98,2131,subject,project,submit
+99,2132,business office manager,project,submit
+100,2133,professor,project,review
+101,2134,assistant professors,project,review
+102,2135,PC members,reviewers,know
+103,2136,author(s),reviewers,know
+104,2137,TA,InternalGrades,view | assign
+105,2138,TA,ExternalGrades,view | assign
+106,2139,she,past medical records,enter
+107,2140,she,medical entries,add
+108,2141,she,private notes of doctors,view
+109,2142,she,legal agreement,sign
+110,2143,Health care workers,recent medical records of residents,view
+111,2144,Health care workers,medical information,view
+112,2145,Doctors,private notes,add
+113,2146,health care staff | manager,Private notes,visible
+114,2147,Pharmacy System,patient records,read
+115,2148,Pharmacy System,patient medicine orders,read
+116,2149,Users,Owner's account,view
+117,2150,Users,Owner's account,changes
+118,2151,administrators,resource's security label,changes
+119,2152,data owners,resource's security label,changes
+120,2153,Owners,data,change
+121,2154,Owners,data,read
