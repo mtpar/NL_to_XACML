@@ -1,0 +1,94 @@
+row-number,id,subject,resource,action
+1,606,HCP,blood pressure|glucose levels|weight|height|pedometer readings,edit 
+2,620,HCP,prescription,add 
+3,621,administrator,entry,add 
+4,622,HCP,patient,edit
+5,629,HCP|patient|representative,message inbox|message outbox,sort 
+6,630,HCP,viewing access to the laboratory results,disallow 
+7,631,patient,zip code|name|specialty,enter
+8,635,patient|LHCP|patient representative,messages,sort
+9,638,admin,specialtyspecify
+10,639,patient,LHCP,undesignate 
+11,641,,data for personnel,edited 
+12,643,LHCP|patient|representative,his message displaying filter,modify
+13,645,,HCP's medical identification number,maintained
+14,647,patient|personal representative,medical records,view
+15,657,he,weight|height|pedometer reading,report 
+16,663,HCP,office visit page,remain 
+17,664,patient,diagnosis,select
+18,670,HCP,list of laboratory procedures|results,view 
+19,673,LHCP,blood pressure|glucose levels|weight|height|pedometer readings,see 
+20,681,administrator,length of this period of time,set 
+21,682,administrator,overriding reasons,maintains 
+22,683,he,weight|height|pedometer readings,report 
+23,688,patient|personal representative,prescriptions|list of their own prescriptions,view
+24,690,UAP|patient representative,blood pressure|glucose levels|height|weight|pedometer readings,input
+25,691,administrator,reason name,modify
+26,692,patient,HCP,add
+27,700,HCP,patient,indicate 
+28,704,LHCP,delete,confirm
+29,709,LHCP,patient,delete 
+30,711,administrator,reason ID number,modify
+31,712,administrator,hospitals,choose
+32,714,administrator,appointment type name,modify
+33,715,He,blood pressure|glucose levels,report 
+34,723,,data,edited 
+35,725,they,diagnoses of blood pressure|high cholesterol|diabetes|cancer|smoking|heart disease|cause of death,see 
+36,727,administrator,listing of allowable physical services,maintains 
+37,733,patient|personal health representative,list of his upcoming appointments|appointments,view 
+38,735,admin,specialty,specify
+39,739,LHCPs|patients,list of their upcoming appointments,view
+40,743,patient,weight|height|pedometer readings,report
+41,745,HCP,viewing access,allow 
+42,747,administrator,drugs,select
+43,748,LHCPs|patients|representatives,messages,reply
+44,750,UAP,weight|height|pedometer measurements,report
+45,757,patient,contact information,view
+46,761,He,glucose levels|blood pressure,report
+47,762,patient,physiologic measurements,report 
+48,778,administrator,existing entry,delete
+49,780,,messages in the list,rdered 
+51,785,HCP,prescription list,view
+52,792,patient,LHCP,designate
+53,793,administrator,interaction,delete 
+54,795,LHCP|UAP,patients,add
+55,799,HCPs,office visit,return 
+56,803,LHCP,appointment,schedule
+57,807,HCP,prescription,proceed 
+58,811,administrator,list of appointment types,manage 
+59,816,,messages in the message inbox,ordered 
+60,820,LHCP|UAP,patients,delete
+61,822,administrator,hospital ID number,modify
+62,832,HCP|patient|representative,message,View
+63,834,LHCP,information,obtain 
+64,838,public health agent,detail of a specific report,see
+65,841,LHCP,add,confirm
+66,842,LHCP,patient report,view 
+67,843,HCP,office visit,edit 
+68,846,HCP,office visit,document 
+69,851,patient|personal representative,patient personal health information|immunizations|office visit information|records,see 
+70,856,LHCP,future appointments,edit 
+71,862,System,screen,presents 
+72,867,patient,LHCP,add
+73,869,HCP,height|weight,graph 
+74,871,HCPs,fields of the office visit information,modify|delete 
+75,874,HCP,patient's historical values|patient's family history|patient's BMI.|patient's immunizations|patient's office visit information,edit
+76,883,,patient's MID,edited
+77,884,patient,list of laboratory procedures|status for their own records and the records for which the user is a personal representative,view
+78,888,public health agent,adverse event report,remove
+79,895,personal representative|patient,abbreviated health history of their siblings, parents, and both sets of grandparents,see 
+80,898,LHCP|patient a|representative,message displaying filter,modify|save
+81,899,patient,link,click 
+82,908,LHCP,prescription,cancel
+83,910,LHCP,Status setting|Consultation entering|Cancel,confirm
+84,917,System,list of the patients,presents 
+85,926,personal representative|patient,questions,answer
+86,927,public health agent,adverse event report,remove 
+87,937,UAP,physiologic measurements,report 
+88,945,LHCP,future appointments,delete 
+89,963,patient,last name|partial last name,type 
+90,977,HCP,list of laboratory procedures,view
+91,978,HCP,comments|status,update
+92,979,editor,form,correct
+93,994,He,patient,select
+94,995,He,data,enter 

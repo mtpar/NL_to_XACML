@@ -1,0 +1,94 @@
+subject.names,subject_properties,resource_names,resource_properties,actions,row_num,id
+LHCP,,blood pressure | glucose levels | height | weight | pedometer readings,for each patient from the monitoring list | for each patient from the monitoring list | for each patient from the monitoring list | for each patient from the monitoring list | for each patient from the monitoring list,edit,1,606
+HCP,,prescription,to the list of medications,add,2,620
+administrator,,entry,for a reason,add,3,621
+HCP,,patient,,edit,4,622
+LHCP | patient | representative,,message inbox | message outbox,,sort,5,629
+HCP,,laboratory results,,view,6,630
+patient,,zip code | name | specialty,match on first three numbers,enter,7,631
+patient | patient representative | LHCP,,messages,in the message outbox,sort,8,635
+admin,,specialty,"for a new LHCP (General Physician, Heart Surgeon, OB, GYN, Pediatrician, or Surgeon)",specify,9,638
+patient,,LHCP,as being a DLHCP for them,undesignate,10,639
+personnel,,data,for personnel | in Data Format,edit,11,641
+LHCP | patient | representative,,messagedisplayingfilter,,modify,12,643
+HCP,,medical identification number,,maintain,13,645
+patient | personal representative,,medical records,including family history,view,14,647
+he,,height | weight | pedometer reading,,report,15,657
+HCP,,office visit page,,remain,16,663
+patient,,diagnosis,,select,17,664
+HCP,,list of laboratory procedures and results,,view,18,670
+LHCP,,blood pressure and glucose levels | weight | height | pedometer readings,,see,19,673
+administrator,,length of this period of time,,set,20,681
+administrator,,reasons,overriding | HCP can select from,maintains,21,682
+He,,height | weight | pedometer readings,,report,22,683
+patient | personal representative,,prescriptions,of the patient | for whom the user is a person representative,view,23,688
+UAP | patient representative,,blood pressure | glucose levels | height | weight | pedometer readings,,input,24,690
+administrator,,reason name,in an existing entry,modify,25,691
+patient,,HCP,to their list of providers,add,26,692
+HCP,,patient | diagnosis code,has passed away,indicate,27,700
+LHCP,,,,delete,28,704
+LHCP,,patient,from his monitoring list | identified by MID,delete,29,709
+administrator,,entry | reason ID number,existing,modify,30,711
+administrator,,hospitals,,choose,31,712
+administrator,,appointment type name,in an existing entry,modify,32,714
+He,,blood pressure and glucose levels,for the patient,report,33,715
+personnel,,data,for personnel | following Data Format 6.2 (all fields mandatory except for associated MID and Street Address 2),edit,34,723
+they,,diagnoses,of blood pressure | high cholesterol | diabetes | cancer | heart disease | smoking | the cause of death,see,35,725
+HCP,,physical services,including laboratory procedures,use,36,727
+patient | personal health representative,,appointments,upcoming | for the patient himself or herself | for the patients he represents,view,37,733
+admin,,LHCP,specialty is General Physician | specialty is Heart Surgeon | specialty is OB or GYN | specialty is Pediatrician | specialty is Surgeon,,38,735
+patients | LHCPs,,appointments,upcoming,view,39,739
+patient,,height | weight | pedometer readings,,report,40,743
+HCP,,laboratory results,,view,41,745
+administrator,,pair of drugs,,select,42,747
+LHCPs | patients | representatives,,messages,,reply,43,748
+UAP,,height | weight | pedometer measurements,,report,44,750
+patient,,contact information,of a selected LHCP | shown in the expired prescription list,view,45,757
+he,,blood pressure | glucose levels,systolic | diastolic,report,46,761
+patient,,physiologic measurements,,report,47,762
+administrator,,entry,existing,delete,48,778
+messages,,,,ordered by timestamp,49,780
+LHCP,,prescription list,for that patient | sorted by start date,view,51,785
+patient,,LHCP,as DLHCP for them,designate,52,792
+administrator,,interaction,between the two drugs,delete,53,793
+LHCP | UAP,,patients,from his monitoring list,add,54,795
+HCPs,,office visit,,return,55,799
+LHCP,,appointment,with a patient,schedule,56,803
+HCP,,prescription,,proceed,57,807
+administrator,,appointment types,standardized list,manage,58,811
+messages,in the message inbox,,,ordered by timestamp | most recent first,59,816
+LHCP | UAP,,patients,from his monitoring list,delete,60,820
+administrator,,hospital ID number,in an existing entry,modify,61,822
+LHCP | patient | representative,,message,,view,62,832
+LHCP,,information,about a patient,obtain | access,63,834
+public health agent,,report,specific report,see,64,838
+LHCP,,add,,confirm,65,841
+LHCP,,comprehensive patient report,for the specified patient,view,66,842
+HCP,,office visit,in which the laboratory procedure was ordered,edit,67,843
+HCP,,office visit,,document,68,846
+patient | personal representative,,patient personal health information | immunizations | office visit information,for their own records,see,69,851
+Service,LHCP,appointments,future,edit,70,856
+System,,date range,,present a screen,71,862
+patient,,LHCP | searching for the name | specialty of a LHCP,to their provider list,add,72,867
+HCP,,height | weight,of the patient | of the patient,graph,73,869
+HCPs,,fields,"of the office visit information (date, hospital, notes, prescriptions, laboratory procedures, diagnoses, procedures, possibly and possibly immunizations)",modify | delete,74,871
+HCP,,patient's historical values | patient's immunizations | patient's office visit information | patient's family history | patient's BMI,,edit,75,874
+patient,,MID,,edit,76,883
+patient,,list of laboratory procedures and status,for their own records | for which the user is a personal representative,view,77,884
+public health agent,,adverse event report,such as based upon communication with the reporter | because the report appears to be bogus,remove,78,888
+patient | personal representative,,health history | MIDs,abbreviated | of siblings | parents | both sets of grandparents | available in iTrust,see,79,895
+LHCP | patient | representative,,message displaying filter,,modify | save,80,898
+patient,,link,,click,81,899
+HCP,,prescription,,cancel,82,908
+LHCP,,,,confirm | status setting | consultation entering | cancel,83,910
+System,,measurements,,report,84,917
+patient | personal representative,,questions,relative to a previous office visit,answer,85,926
+public health agent,,adverse event report,,remove,86,927
+UAP,,physiologic measurements,,report,87,937
+Service,LHCP,appointments,future,delete,88,945
+patient,,last name,or partial last name,type,89,963
+HCP,,list of laboratory procedures,,view,90,977
+HCP,,status | comments,,update,91,978
+editor,,,,correct,92,979
+He,,patient,,select,93,994
+he,,data,,enter,94,995
